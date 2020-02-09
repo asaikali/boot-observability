@@ -11,7 +11,7 @@ public class HelloController {
   private final Logger logger = LoggerFactory.getLogger(HelloController.class);
   @GetMapping("/")
   public String hello(){
-    logger.info("Order {} saved", StructuredArguments.keyValue("orderId",123));
+    logger.info("Hello called {} -> {}", StructuredArguments.keyValue("foo",123), StructuredArguments.value("bar","world"));
     return "hello";
   }
 }
