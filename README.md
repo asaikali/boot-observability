@@ -8,6 +8,8 @@ SpringBoot.
 * Install a recent version of your favourite Java IDE
     * [IntelliJ IDEA](https://www.jetbrains.com/idea/download) 
     * [Spring Tool Suite for Eclipse](https://spring.io/tools)
+* Download [Zipkin Server .jar](https://repo1.maven.org/maven2/io/zipkin/zipkin-server/2.19.3/zipkin-server-2.19.3-exec.jar) 
+  from maven central and place into  
 * Download [Prometheus](https://prometheus.io/download/) 
     * The first package called prometheus is required. 
     * Alert manager and other components of prometheus are not required, no need to download them.
