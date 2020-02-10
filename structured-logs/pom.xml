@@ -58,11 +58,8 @@
           <configuration>
             <verbose>false</verbose>
             <failOnNoGitDirectory>false</failOnNoGitDirectory>
-
           </configuration>
       </plugin>
     </plugins>
   </build>
-
-
 </project>
