@@ -13,7 +13,7 @@
   <artifactId>boot-observability</artifactId>
   <packaging>pom</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <description>A collection of sample apps to demonstrate observability techniques gor spring boot
+  <description>A collection of sample apps to demonstrate observability techniques for spring boot
     microservices
   </description>
 
@@ -22,9 +22,10 @@
   </properties>
 
   <modules>
-    <module>structured-logs</module>
-    <module>multi-dimensional-metrics</module>
-    <module>distributed-tracing</module>
+    <module>logs</module>
+    <module>metrics</module>
+    <module>tracing</module>
+    <module>health</module>
   </modules>
 
   <!-- set common testing dependencies -->
