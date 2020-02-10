@@ -8,16 +8,13 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>multi-dimensional-metrics</artifactId>
+	<artifactId>distributed-tracing</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>multi-dimensional-metrics</name>
-	<description>Multi Dimensional Metrics Example</description>
+	<name>distributed-tracing</name>
+	<description>Demo Project Showing Distributed Tracing</description>
+
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -32,4 +29,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>

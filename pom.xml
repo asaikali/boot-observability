@@ -24,6 +24,7 @@
   <modules>
     <module>structured-logs</module>
     <module>multi-dimensional-metrics</module>
+    <module>distributed-tracing</module>
   </modules>
 
   <!-- set common testing dependencies -->
