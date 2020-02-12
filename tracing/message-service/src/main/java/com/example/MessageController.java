@@ -1,5 +1,6 @@
 package com.example;
 
+import org.aspectj.bridge.Message;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -15,30 +16,30 @@ import java.util.Optional;
 public class MessageController {
 
     private final Logger logger = LoggerFactory.getLogger(MessageController.class);
-    private final QuoteRepository quoteRepository;
+    private final MessageService messageService;
 
-    public MessageController(QuoteRepository quoteRepository) {
-        this.quoteRepository = quoteRepository;
+    public MessageController(MessageService messageService) {
+        this.messageService = messageService;
     }
 
     @GetMapping("/")
     public Quote radomQuote()
     {
         logger.info("returning a random quote");
-        return quoteRepository.findRandomQuote();
+        return messageService.radomQuote();
     }
 
     @GetMapping("/quotes")
     public List<Quote> getAll()
     {
         logger.info("returning all quotes");
-        return quoteRepository.findAll();
+        return messageService.getAll();
     }
 
     @GetMapping("/quotes/{id}")
     public ResponseEntity<Quote> getQuote(@PathVariable("id") Integer id) {
         logger.info("looking for quote with id={}",id);
-        Optional<Quote> quote = quoteRepository.findById(id);
+        Optional<Quote> quote = messageService.getQuote(id);
         if (quote.isPresent()) {
             return new ResponseEntity<>(quote.get(), HttpStatus.OK);
         } else {
