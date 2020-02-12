@@ -1,6 +1,8 @@
 server:
-  port: 8080
+  port: 8081
 
+# expose all the spring boot actuators good for demos.
+# NEVER DO THIS in production
 management:
   endpoints:
     web:
