@@ -1,4 +1,5 @@
-server:
+
+erver:
   port: 8080
 
 management:
@@ -9,3 +10,6 @@ management:
   endpoint:
     health:
       show-details: always
+spring:
+  application:
+    name: example-logs
