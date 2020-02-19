@@ -1,3 +1,6 @@
+region: east
+zone: 1a
+
 server:
   port: 8080
 

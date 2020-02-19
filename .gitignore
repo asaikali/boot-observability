@@ -30,3 +30,4 @@ build/
 ### VS Code ###
 .vscode/
 /tools/macOS/prometheus/data/
+/tools/macOS/prometheus/data/
