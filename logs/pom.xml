@@ -10,9 +10,9 @@
   </parent>
 
   <groupId>com.example</groupId>
-  <artifactId>structured-logs</artifactId>
+  <artifactId>logs</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>structured-logs</name>
+  <name>logs</name>
   <description>Example of a Boot Project that ouputs logs as JSON objects</description>
 
   <properties>

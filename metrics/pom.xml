@@ -8,9 +8,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>multi-dimensional-metrics</artifactId>
+	<artifactId>metrics</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>multi-dimensional-metrics</name>
+	<name>metrics</name>
 	<description>Multi Dimensional Metrics Example</description>
 
 	<dependencies>
